@@ -1,5 +1,5 @@
 {
-  "name": "accelerator-first-project",
+  "name": "accelerator-second-project",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -56,5 +56,17 @@
   },
   "volta": {
     "node": "20.12.2"
-  }
+  },
+  "description": "Стартовый репозиторий для работы над первым проектом в «Акселераторе» профессии «Фронтенд-разработчик»",
+  "main": "bem-tree.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlacademy/accelerator-project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/htmlacademy/accelerator-project-2/issues"
+  },
+  "homepage": "https://github.com/htmlacademy/accelerator-project-2#readme"
 }
