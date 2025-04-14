@@ -1,4 +1,10 @@
-// Vendor
-// ---------------------------------
+//common
 
-@import "vendor/normalize";
+@import "common/fonts.scss";
+@import "common/global.scss";
+@import "common/variables.scss";
+
+// block 
+
+@import "block/page.scss";
+@import "block/visually-hidden.scss";

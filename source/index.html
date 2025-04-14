@@ -15,9 +15,221 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg>
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <section data-test="header">header</section>
-    <section data-test="hero">hero</section>
-    <section data-test="tours">tours</section>
+    <header data-test="header">
+      <div class="header_container">
+        <button class="header__button"><span class="visually-hidden">Открыть</span></button>
+        <svg>
+          <use href=""></use>
+        </svg>
+        <nav class="header__navigation">
+          <ul class="header__navigaion-list">
+            <li class="heaader__navigation-item">Туры</li>
+            <li class="heaader__navigation-item">Обучение</li>
+            <li class="heaader__navigation-item">О нас</li>
+            <li class="heaader__navigation-item">Отзывы</li>
+            <li class="heaader__navigation-item">Фотографии</li>
+            <li class="heaader__navigation-item">Контакты</li>
+          </ul>
+          <a href="tel:8-800-000-00-00" class="header__tel">8 800 000-00-00</a>
+        </nav>
+      </div>
+    </header>
+    <section data-test="hero">
+      <div class="hero__container container">
+        <div class="hero__image-wrapper">
+          <ul class="hero__image-list">
+            <li class="hero__image-item">
+              <div class="hero__image-text">
+                <h1>Захватывающие вершины Кавказа</h1>
+                <p>В сопровождении опытных гидов
+                  вы пройдёте через потрясающие
+                  ландшафты и совершите восход
+                  на вершину горы Чегет.</p>
+                  <button class="hero__image-button"><span class="visually-hidden">Смотреть тур</span></button>
+              </div>
+              <picture>
+                <img>
+              </picture>
+            </li>
+            <li class="hero__image-item">
+              <div class="hero__image-text">
+                <h1>Невероятная природа Камчатки</h1>
+                <p>Незабываемое приключение, во время 
+                  которого вы отправитесь в путешествие 
+                  по одному из самых нетронутых уголков 
+                  дикой природы в мире.</p>
+                  <button class="hero__image-button"><span class="visually-hidden">Смотреть тур</span></button>
+              </div>
+              <picture>
+                <img>
+              </picture>
+            </li>
+            <li class="hero__image-item">
+              <div class="hero__image-text">
+                <h1>Магические пейзажи<br> Алтайского Края</h1>
+                <p>Алтайский трекинг-тур — это захватывающее 
+                  приключение с посещением магических и 
+                  захватывающих дух ландшафтов Алтайских гор.</p>
+                  <button class="hero__image-button"><span class="visually-hidden">Смотреть тур</span></button>
+              </div>
+              <picture>
+                <img>
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section data-test="tours">
+      <div class="tours__container container">
+        <h2 class="tours__title">Ближайшие туры</h2>
+        <ul class="tours__list">
+          <li class="tours__item travel-card">
+            <div class="tours-card__info-top">
+              <span class="tours-card__info-country">Кавказ</span>
+              <span class="tours-card__info-days">4 дня</span>
+              <span class="tours-card__info-nights"> 3 ночи</span>
+            </div>
+            <div class="tours-card__info-center">
+              <h3 class="tours-card__info-title">Путешествие
+                вокруг Эльбруса</h3>
+            </div>
+            <div class="tours-card__info-bottom">
+              <p class="tours-card__info-complexity">
+                Сложность:
+                <div class="tours-card__info-stars">
+                  <input type="radio" id="star-5" name="rating" value="5">
+                  <label for="star-5" title="Оценка «5»"></label>	
+                  <input type="radio" id="star-4" name="rating" value="4">
+                  <label for="star-4" title="Оценка «4»"></label>    
+                  <input type="radio" id="star-3" name="rating" value="3">
+                  <label for="star-3" title="Оценка «3»"></label>  
+                  <input type="radio" id="star-2" name="rating" value="2">
+                  <label for="star-2" title="Оценка «2»"></label>    
+                  <input type="radio" id="star-1" name="rating" value="1">
+                  <label for="star-1" title="Оценка «1»"></label>
+                </div>
+              </p>
+              <p class="tours-card__info-recruitment-dates">
+                Даты набора:
+                <span class="tours-card__info-dates">12.06–19.06</span>
+              </p>
+              <p class="tours-card__info-group">
+                Группа:
+                <span class="tours-card__info-group-people">до 15 чел.</span>
+              </p>
+            </div>
+          </li>
+          <li class="tours__item travel-card">
+            <div class="tours-card__info-top">
+              <span class="tours-card__info-country">Алтай</span>
+              <span class="tours-card__info-days">14 дней</span>
+              <span class="tours-card__info-nights"> 3 ночи</span>
+            </div>
+            <div class="tours-card__info-center">
+              <h3 class="tours-card__info-title">Путь к подножию Белухи</h3>
+            </div>
+            <div class="tours-card__info-bottom">
+              <p class="tours-card__info-complexity">
+                Сложность:
+                <div class="tours-card__info-stars">
+                  <input type="radio" id="star-5" name="rating" value="5">
+                  <label for="star-5" title="Оценка «5»"></label>	
+                  <input type="radio" id="star-4" name="rating" value="4">
+                  <label for="star-4" title="Оценка «4»"></label>    
+                  <input type="radio" id="star-3" name="rating" value="3">
+                  <label for="star-3" title="Оценка «3»"></label>  
+                  <input type="radio" id="star-2" name="rating" value="2">
+                  <label for="star-2" title="Оценка «2»"></label>    
+                  <input type="radio" id="star-1" name="rating" value="1">
+                  <label for="star-1" title="Оценка «1»"></label>
+                </div>
+              </p>
+              <p class="tours-card__info-recruitment-dates">
+                Даты набора:
+                <span class="tours-card__info-dates">14.06–23.06</span>
+              </p>
+              <p class="tours-card__info-group">
+                Группа:
+                <span class="tours-card__info-group-people">до 25 чел.</span>
+              </p>
+            </div>
+          </li>
+          <li class="tours__item travel-card">
+            <div class="tours-card__info-top">
+              <span class="tours-card__info-country">Адыгея</span>
+              <span class="tours-card__info-days">7 дней</span>
+              <span class="tours-card__info-nights">5 ночей</span>
+            </div>
+            <div class="tours-card__info-center">
+              <h3 class="tours-card__info-title">Через Фишт
+                к Чёрному морю и обратно</h3>
+            </div>
+            <div class="tours-card__info-bottom">
+              <p class="tours-card__info-complexity">
+                Сложность:
+                <div class="tours-card__info-stars">
+                  <input type="radio" id="star-5" name="rating" value="5">
+                  <label for="star-5" title="Оценка «5»"></label>	
+                  <input type="radio" id="star-4" name="rating" value="4">
+                  <label for="star-4" title="Оценка «4»"></label>    
+                  <input type="radio" id="star-3" name="rating" value="3">
+                  <label for="star-3" title="Оценка «3»"></label>  
+                  <input type="radio" id="star-2" name="rating" value="2">
+                  <label for="star-2" title="Оценка «2»"></label>    
+                  <input type="radio" id="star-1" name="rating" value="1">
+                  <label for="star-1" title="Оценка «1»"></label>
+                </div>
+              </p>
+              <p class="tours-card__info-recruitment-dates">
+                Даты набора:
+                <span class="tours-card__info-dates">15.07–19.07</span>
+              </p>
+              <p class="tours-card__info-group">
+                Группа:
+                <span class="tours-card__info-group-people">до 22 чел.</span>
+              </p>
+            </div>
+          </li>
+          <li class="tours__item travel-card">
+            <div class="tours-card__info-top">
+              <span class="tours-card__info-country">Урал</span>
+              <span class="tours-card__info-days">9 дней</span>
+              <span class="tours-card__info-nights">10 ночей</span>
+            </div>
+            <div class="tours-card__info-center">
+              <h3 class="tours-card__info-title">Восхождение 
+                Манарага</h3>
+            </div>
+            <div class="tours-card__info-bottom">
+              <p class="tours-card__info-complexity">
+                Сложность:
+                <div class="tours-card__info-stars">
+                  <input type="radio" id="star-5" name="rating" value="5">
+                  <label for="star-5" title="Оценка «5»"></label>	
+                  <input type="radio" id="star-4" name="rating" value="4">
+                  <label for="star-4" title="Оценка «4»"></label>    
+                  <input type="radio" id="star-3" name="rating" value="3">
+                  <label for="star-3" title="Оценка «3»"></label>  
+                  <input type="radio" id="star-2" name="rating" value="2">
+                  <label for="star-2" title="Оценка «2»"></label>    
+                  <input type="radio" id="star-1" name="rating" value="1">
+                  <label for="star-1" title="Оценка «1»"></label>
+                </div>
+              </p>
+              <p class="tours-card__info-recruitment-dates">
+                Даты набора:
+                <span class="tours-card__info-dates">12.07–19.07</span>
+              </p>
+              <p class="tours-card__info-group">
+                Группа:
+                <span class="tours-card__info-group-people">до 7  чел.</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section data-test="training">training</section>
     <section data-test="about">about</section>
     <section data-test="reviews">reviews</section>
