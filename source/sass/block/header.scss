@@ -1,0 +1,44 @@
+.header {
+  padding: 15px;
+  padding-bottom: 13px;
+  background-color: $secondary-color;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 16px;
+}
+
+.header__button {
+  background-image: url("/__spritemap#sprite-button-header-view");
+  width: 26px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  background-size: 26px 20px;
+  margin-top: 3px;
+  grid-row: 1/2;
+}
+
+.header__logo {
+  grid-row: 1/2;
+}
+
+.header__navigation-list {
+  display: none;
+}
+
+.header__navigation-item {
+  list-style-type: none;
+}
+
+.header__tel {
+  grid-column: 2/3;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: end;
+}

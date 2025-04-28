@@ -1,0 +1,28 @@
+.hero__container {
+}
+
+.hero__image-list {
+  padding: 0;
+  margin: 0;
+}
+
+.hero__image-item {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  padding: 40px 15px;
+  min-height: 568px;
+}
+
+.hero__image-text {
+  z-index: 1;
+}
+
+.hero__image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
