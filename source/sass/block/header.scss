@@ -1,0 +1,125 @@
+.header {
+  padding: 15px;
+  padding-bottom: 13px;
+  background-color: $secondary-color;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 16px;
+}
+
+.header__button {
+  background-image: url("/__spritemap#sprite-button-header-view");
+  width: 26px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  background-size: 26px 20px;
+  margin-top: 3px;
+  grid-row: 1/2;
+}
+
+.header__logo {
+  grid-row: 1/2;
+}
+
+.header__navigation-list {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__navigation-item {
+  list-style-type: none;
+}
+
+.header__navigation-link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.56px;
+  text-decoration: none;
+}
+
+.header__tel {
+  grid-column: 2/3;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: end;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 20px 45px;
+  }
+  .header__container {
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: unset;
+  }
+
+  .header__button {
+    margin: 0;
+  }
+
+  .header__logo {
+    justify-self: center;
+  }
+
+  .header__navigation-link {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+  }
+
+  .header__tel {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding: 42px 120px 42px 152px;
+  }
+
+  .header__container {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__logo {
+    justify-self: start;
+  }
+
+  .header__navigation-list {
+    display: block;
+    display: flex;
+    column-gap: 30px;
+    justify-content: end;
+  }
+
+  .header__navigation-link {
+    font-weight: 400;
+    letter-spacing: unset;
+    text-transform: none;
+  }
+
+  .header__tel {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

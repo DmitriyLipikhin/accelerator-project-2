@@ -1,0 +1,90 @@
+.hero__image-wrapper {
+  overflow: hidden;
+}
+
+.hero__image-list {
+  padding: 0;
+  margin: 0;
+}
+
+.hero__image-item {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  padding: 152px 15px 40px;
+  min-height: 568px;
+}
+
+.hero__image-text {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__image-text h1 {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.hero__image-text p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 61px;
+}
+
+.hero__image-button {
+  align-self: center;
+  width: 180px;
+}
+
+.hero__image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero__pagination {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__image-item {
+    min-height: 1034px;
+  }
+
+  .hero__container .hero__pagination {
+    top: -100px;
+  }
+
+  .hero__pagination {
+    display: flex;
+    column-gap: 20px;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+  }
+
+  .hero__pagination-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px #000000 solid;
+    display: block;
+  }
+
+  .hero__pagination-button-active {
+    background-color: #ffffff;
+  }
+}
