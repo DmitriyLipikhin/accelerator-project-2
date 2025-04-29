@@ -5,7 +5,9 @@
 @import "common/variables.scss";
 
 // Block
-
+@import 'swiper/css/pagination';
+@import 'swiper/css/mousewheel';
+@import 'swiper/css';
 @import "block/button.scss";
 @import "block/page.scss";
 @import "block/visually-hidden.scss";

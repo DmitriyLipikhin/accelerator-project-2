@@ -1,8 +1,5 @@
 import Swiper from "swiper";
 import {Pagination, Mousewheel} from 'swiper/modules';
-import 'swiper/css/pagination';
-import 'swiper/css/mousewheel';
-import 'swiper/css';
 
 new Swiper ('#swiper-hero', {
   modules: [Pagination, Mousewheel],
