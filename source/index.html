@@ -117,191 +117,205 @@
     <section class="tours" data-test="tours">
       <div class="tours__container container">
         <h2 class="tours__title">Ближайшие туры</h2>
-        <ul class="tours__list">
-          <li class="tours__item travel-card">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/tours@1x.webp, ./img/tours@2x.webp 2x" width="380" height="416">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/tours@1x.webp, ./img/tours@2x.webp 2x" width="330" height="416">
-              <source type="image/webp" srcset="./img/tours@1x.webp, ./img/tours@2x.webp 2x" width="290" height="416">
-              <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/tours@1x.jpg, ./img/tours@2x.jpg 2x" width="380" height="416">
-              <source media="(min-width: 768px)" type="image/jpg" srcset="./img/tours@1x.jpg, ./img/tours@2x.jpg 2x" width="330" height="416">
-              <img class="about__content-image" src="./img/tours@1x.jpg" srcset="./img/tours@2x.jpg 2x" width="290" height="416" alt="Фото Эльбруса">
-            </picture>
-            <div class="tours-card__info">
-              <div class="tours-card__info-top">
-                <span class="tours-card__info-country">Кавказ</span>
-                <span class="tours-card__info-days">4 дня</span>
-                <span class="tours-card__info-nights"> 3 ночи</span>
-              </div>
-              <div class="tours-card__info-center">
-                <h3 class="tours-card__info-title">Путешествие
-                  вокруг Эльбруса</h3>
-              </div>
-              <div class="tours-card__info-bottom">
-                <p class="tours-card__info-complexity">
-                  Сложность:
-                  <div class="tours-card__info-stars">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
+        <div class="tours__wrapper" id="swiper-tours">
+          <div class="tours__button-wrapper">
+            <button class="tours__button tours__button-left"><span class="visually-hidden">Листать влево</span></button>
+            <button class="tours__button tours__button-right"><span class="visually-hidden">Листать вправо</span></button>
+          </div>
+          <ul class="tours__list swiper-wrapper">
+            <li class="tours__item travel-card swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/tours@1x.webp, ./img/tours@2x.webp 2x" width="380" height="416">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/tours@1x.webp, ./img/tours@2x.webp 2x" width="330" height="416">
+                <source type="image/webp" srcset="./img/tours@1x.webp, ./img/tours@2x.webp 2x" width="290" height="416">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/tours@1x.jpg, ./img/tours@2x.jpg 2x" width="380" height="416">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/tours@1x.jpg, ./img/tours@2x.jpg 2x" width="330" height="416">
+                <img class="travel-card__image" src="./img/tours@1x.jpg" srcset="./img/tours@2x.jpg 2x" width="290" height="416" alt="Фото Эльбруса">
+              </picture>
+              <div class="travel-card__info">
+                <div class="travel-card__info-top">
+                  <span class="travel-card__info-top-label travel-card__info-top-label-country">Кавказ</span>
+                  <div class="travel-card__info-top-time-location-wrapper">
+                    <span class="travel-card__info-top-label travel-card__info-top-label-days">4 дня</span>
+                    <span class="travel-card__info-top-label travel-card__info-top-label-nights"> 3 ночи</span>
                   </div>
-                </p>
-                <p class="tours-card__info-recruitment-dates">
-                  Даты набора:
-                  <span class="tours-card__info-dates">12.06–19.06</span>
-                </p>
-                <p class="tours-card__info-group">
-                  Группа:
-                  <span class="tours-card__info-group-people">до 15 чел.</span>
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="tours__item travel-card">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/tours1@1x.webp, ./img/tours1@2x.webp 2x" width="380" height="416">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/tours1@1x.webp, ./img/tours1@2x.webp 2x" width="330" height="416">
-              <source type="image/webp" srcset="./img/tours1@1x.webp, ./img/tours1@2x.webp 2x" width="290" height="416">
-              <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/tours1@1x.jpg, ./img/tours1@2x.jpg 2x" width="380" height="416">
-              <source media="(min-width: 768px)" type="image/jpg" srcset="./img/tours1@1x.jpg, ./img/tours1@2x.jpg 2x" width="330" height="416">
-              <img class="about__content-image" src="./img/tours1@1x.jpg" srcset="./img/tours1@2x.jpg 2x" width="290" height="416" alt="Фото Эльбруса">
-            </picture>
-            <div class="tours-card__info">
-              <div class="tours-card__info-top">
-                <span class="tours-card__info-country">Алтай</span>
-                <span class="tours-card__info-days">14 дней</span>
-                <span class="tours-card__info-nights"> 3 ночи</span>
-              </div>
-              <div class="tours-card__info-center">
-                <h3 class="tours-card__info-title">Путь к подножию Белухи</h3>
-              </div>
-              <div class="tours-card__info-bottom">
-                <p class="tours-card__info-complexity">
-                  Сложность:
-                  <div class="tours-card__info-stars">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
+                </div>
+                <div class="travel-card__info-center">
+                  <h3 class="travel-card__info-title">Путешествие
+                    вокруг Эльбруса</h3>
+                </div>
+                <div class="travel-card__info-bottom">
+                  <div class="travel-card__info-bottom-wrapper">
+                    <p class="travel-card__info-bottom-label travel-card__info-bottom-label-complexity">Сложность:</p>
+                    <div class="travel-card__info-bottom-stars">
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="star-5" name="rating" value="5">
+                      <label class="travel-card__info-bottom-stars-label" for="star-5" title="Оценка «5»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="star-4" name="rating" value="4" checked>
+                      <label class="travel-card__info-bottom-stars-label" for="star-4" title="Оценка «4»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="star-3" name="rating" value="3">
+                      <label class="travel-card__info-bottom-stars-label" for="star-3" title="Оценка «3»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="star-2" name="rating" value="2">
+                      <label class="travel-card__info-bottom-stars-label" for="star-2" title="Оценка «2»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="star-1" name="rating" value="1">
+                      <label class="travel-card__info-bottom-stars-label" for="star-1" title="Оценка «1»"></label>
+                    </div>
                   </div>
-                </p>
-                <p class="tours-card__info-recruitment-dates">
-                  Даты набора:
-                  <span class="tours-card__info-dates">14.06–23.06</span>
-                </p>
-                <p class="tours-card__info-group">
-                  Группа:
-                  <span class="tours-card__info-group-people">до 25 чел.</span>
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="tours__item travel-card">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/tours2@1x.webp, ./img/tours2@2x.webp 2x" width="380" height="416">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/tours2@1x.webp, ./img/tours2@2x.webp 2x" width="330" height="416">
-              <source type="image/webp" srcset="./img/tours2@1x.webp, ./img/tours2@2x.webp 2x" width="290" height="416">
-              <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/tours2@1x.jpg, ./img/tours2@2x.jpg 2x" width="380" height="416">
-              <source media="(min-width: 768px)" type="image/jpg" srcset="./img/tours2@1x.jpg, ./img/tours2@2x.jpg 2x" width="330" height="416">
-              <img class="about__content-image" src="./img/tours2@1x.jpg" srcset="./img/tours2@2x.jpg 2x" width="290" height="416" alt="Фото Эльбруса">
-            </picture>
-            <div class="tours-card__info">
-              <div class="tours-card__info-top">
-                <span class="tours-card__info-country">Адыгея</span>
-                <span class="tours-card__info-days">7 дней</span>
-                <span class="tours-card__info-nights">5 ночей</span>
-              </div>
-              <div class="tours-card__info-center">
-                <h3 class="tours-card__info-title">Через Фишт
-                  к Чёрному морю и обратно</h3>
-              </div>
-              <div class="tours-card__info-bottom">
-                <p class="tours-card__info-complexity">
-                  Сложность:
-                  <div class="tours-card__info-stars">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
+                  <div class="travel-card__info-bottom-wrapper">
+                    <p class="travel-card__info-bottom-label travel-card__info-bottom-label-recruitment">Даты набора:</p>
+                    <span class="travel-card__info-dates">12.06–19.06</span>
                   </div>
-                </p>
-                <p class="tours-card__info-recruitment-dates">
-                  Даты набора:
-                  <span class="tours-card__info-dates">15.07–19.07</span>
-                </p>
-                <p class="tours-card__info-group">
-                  Группа:
-                  <span class="tours-card__info-group-people">до 22 чел.</span>
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="tours__item travel-card">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/tours3@1x.webp, ./img/tours3@2x.webp 2x" width="380" height="416">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/tours3@1x.webp, ./img/tours3@2x.webp 2x" width="330" height="416">
-              <source type="image/webp" srcset="./img/tours3@1x.webp, ./img/tours3@2x.webp 2x" width="290" height="416">
-              <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/tours3@1x.jpg, ./img/tours3@2x.jpg 2x" width="380" height="416">
-              <source media="(min-width: 768px)" type="image/jpg" srcset="./img/tours3@1x.jpg, ./img/tours3@2x.jpg 2x" width="330" height="416">
-              <img class="about__content-image" src="./img/tours3@1x.jpg" srcset="./img/tours3@2x.jpg 2x" width="290" height="416" alt="Фото Эльбруса">
-            </picture>
-            <div class="tours-card__info-center">
-              <div class="tours-card__info-top">
-                <span class="tours-card__info-country">Урал</span>
-                <span class="tours-card__info-days">9 дней</span>
-                <span class="tours-card__info-nights">10 ночей</span>
-              </div>
-              <div class="tours-card__info-center">
-                <h3 class="tours-card__info-title">Восхождение
-                  Манарага</h3>
-              </div>
-              <div class="tours-card__info-bottom">
-                <p class="tours-card__info-complexity">
-                  Сложность:
-                  <div class="tours-card__info-stars">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
+                  <div class="travel-card__info-bottom-wrapper">
+                  <p class="travel-card__info-bottom-label travel-card__info-bottom-label-group">Группа:</p>
+                  <span class="travel-card__info-group-people">до 15 чел.</span>
                   </div>
-                </p>
-                <p class="tours-card__info-recruitment-dates">
-                  Даты набора:
-                  <span class="tours-card__info-dates">12.07–19.07</span>
-                </p>
-                <p class="tours-card__info-group">
-                  Группа:
-                  <span class="tours-card__info-group-people">до 7  чел.</span>
-                </p>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="tours__item travel-card swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/tours1@1x.webp, ./img/tours1@2x.webp 2x" width="380" height="416">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/tours1@1x.webp, ./img/tours1@2x.webp 2x" width="330" height="416">
+                <source type="image/webp" srcset="./img/tours1@1x.webp, ./img/tours1@2x.webp 2x" width="290" height="416">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/tours1@1x.jpg, ./img/tours1@2x.jpg 2x" width="380" height="416">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/tours1@1x.jpg, ./img/tours1@2x.jpg 2x" width="330" height="416">
+                <img class="travel-card__image" src="./img/tours1@1x.jpg" srcset="./img/tours1@2x.jpg 2x" width="290" height="416" alt="Фото Эльбруса">
+              </picture>
+              <div class="travel-card__info">
+                <div class="travel-card__info-top">
+                  <span class="travel-card__info-top-label travel-card__info-top-label-country">Алтай</span>
+                  <div class="travel-card__info-top-time-location-wrapper">
+                    <span class="travel-card__info-top-label travel-card__info-top-label-days">14 дней</span>
+                    <span class="travel-card__info-top-label travel-card__info-top-label-nights">13 ночей</span>
+                  </div>
+                </div>
+                <div class="travel-card__info-center">
+                  <h3 class="travel-card__info-title">Путь к подножию Белухи</h3>
+                </div>
+                <div class="travel-card__info-bottom">
+                  <div class="travel-card__info-bottom-wrapper">
+                    <p class="travel-card__info-bottom-label travel-card__info-bottom-label-complexity">Сложность:</p>
+                    <div class="travel-card__info-bottom-stars">
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="1star-5" name="rating1" value="5">
+                      <label class="travel-card__info-bottom-stars-label" for="1star-5" title="Оценка «5»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="1star-4" name="rating1" value="4">
+                      <label class="travel-card__info-bottom-stars-label" for="1star-4" title="Оценка «4»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="1star-3" name="rating1" value="3" checked>
+                      <label class="travel-card__info-bottom-stars-label" for="1star-3" title="Оценка «3»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="1star-2" name="rating1" value="2">
+                      <label class="travel-card__info-bottom-stars-label" for="1star-2" title="Оценка «2»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="1star-1" name="rating1" value="1">
+                      <label class="travel-card__info-bottom-stars-label" for="1star-1" title="Оценка «1»"></label>
+                    </div>
+                  </div>
+                  <div class="travel-card__info-bottom-wrapper">
+                    <p class="travel-card__info-bottom-label travel-card__info-bottom-label-recruitment">Даты набора:</p>
+                    <span class="travel-card__info-dates">14.06–23.06</span>
+                  </div>
+                  <div class="travel-card__info-bottom-wrapper">
+                  <p class="travel-card__info-bottom-label travel-card__info-bottom-label-group">Группа:</p>
+                  <span class="travel-card__info-group-people">до 25 чел.</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tours__item travel-card swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/tours2@1x.webp, ./img/tours2@2x.webp 2x" width="380" height="416">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/tours2@1x.webp, ./img/tours2@2x.webp 2x" width="330" height="416">
+                <source type="image/webp" srcset="./img/tours2@1x.webp, ./img/tours2@2x.webp 2x" width="290" height="416">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/tours2@1x.jpg, ./img/tours2@2x.jpg 2x" width="380" height="416">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/tours2@1x.jpg, ./img/tours2@2x.jpg 2x" width="330" height="416">
+                <img class="travel-card__image" src="./img/tours2@1x.jpg" srcset="./img/tours2@2x.jpg 2x" width="290" height="416" alt="Фото Эльбруса">
+              </picture>
+              <div class="travel-card__info">
+                <div class="travel-card__info-top">
+                  <span class="travel-card__info-top-label travel-card__info-top-label-country">Адыгея</span>
+                  <div class="travel-card__info-top-time-location-wrapper">
+                    <span class="travel-card__info-top-label travel-card__info-top-label-days">7 дней</span>
+                    <span class="travel-card__info-top-label travel-card__info-top-label-nights">6 ночей</span>
+                  </div>
+                </div>
+                <div class="travel-card__info-center">
+                  <h3 class="travel-card__info-title">Через Фишт
+                    к Чёрному морю и обратно</h3>
+                </div>
+                <div class="travel-card__info-bottom">
+                  <div class="travel-card__info-bottom-wrapper">
+                    <p class="travel-card__info-bottom-label travel-card__info-bottom-label-complexity">Сложность:</p>
+                    <div class="travel-card__info-bottom-stars">
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="2star-5" name="rating2" value="5">
+                      <label class="travel-card__info-bottom-stars-label" for="2star-5" title="Оценка «5»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="2star-4" name="rating2" value="4" checked>
+                      <label class="travel-card__info-bottom-stars-label" for="2star-4" title="Оценка «4»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="2star-3" name="rating2" value="3">
+                      <label class="travel-card__info-bottom-stars-label" for="2star-3" title="Оценка «3»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="2star-2" name="rating2" value="2">
+                      <label class="travel-card__info-bottom-stars-label" for="2star-2" title="Оценка «2»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="2star-1" name="rating2" value="1">
+                      <label class="travel-card__info-bottom-stars-label" for="2star-1" title="Оценка «1»"></label>
+                    </div>
+                  </div>
+                  <div class="travel-card__info-bottom-wrapper">
+                    <p class="travel-card__info-bottom-label travel-card__info-bottom-label-recruitment">Даты набора:</p>
+                    <span class="travel-card__info-dates">15.07–19.07</span>
+                  </div>
+                  <div class="travel-card__info-bottom-wrapper">
+                  <p class="travel-card__info-bottom-label travel-card__info-bottom-label-group">Группа:</p>
+                  <span class="travel-card__info-group-people">до 22 чел.</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tours__item travel-card swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/tours3@1x.webp, ./img/tours3@2x.webp 2x" width="380" height="416">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/tours3@1x.webp, ./img/tours3@2x.webp 2x" width="330" height="416">
+                <source type="image/webp" srcset="./img/tours3@1x.webp, ./img/tours3@2x.webp 2x" width="290" height="416">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/tours3@1x.jpg, ./img/tours3@2x.jpg 2x" width="380" height="416">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/tours3@1x.jpg, ./img/tours3@2x.jpg 2x" width="330" height="416">
+                <img class="travel-card__image" src="./img/tours3@1x.jpg" srcset="./img/tours3@2x.jpg 2x" width="290" height="416" alt="Фото Эльбруса">
+              </picture>
+              <div class="travel-card__info">
+                <div class="travel-card__info-top">
+                  <span class="travel-card__info-top-label travel-card__info-top-label-country">Урал</span>
+                  <div class="travel-card__info-top-time-location-wrapper">
+                    <span class="travel-card__info-top-label travel-card__info-top-label-days">9 дней</span>
+                    <span class="travel-card__info-top-label travel-card__info-top-label-nights">10 ночей</span>
+                  </div>
+                </div>
+                <div class="travel-card__info-center">
+                  <h3 class="travel-card__info-title">Восхождение
+                    Манарага</h3>
+                </div>
+                <div class="travel-card__info-bottom">
+                  <div class="travel-card__info-bottom-wrapper">
+                    <p class="travel-card__info-bottom-label travel-card__info-bottom-label-complexity">Сложность:</p>
+                    <div class="travel-card__info-bottom-stars">
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="3star-5" name="rating3" value="5" checked>
+                      <label class="travel-card__info-bottom-stars-label" for="3star-5" title="Оценка «5»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="3star-4" name="rating3" value="4">
+                      <label class="travel-card__info-bottom-stars-label" for="3star-4" title="Оценка «4»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="3star-3" name="rating3" value="3">
+                      <label class="travel-card__info-bottom-stars-label" for="3star-3" title="Оценка «3»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="3star-2" name="rating3" value="2">
+                      <label class="travel-card__info-bottom-stars-label" for="3star-2" title="Оценка «2»"></label>
+                      <input class="travel-card__info-bottom-stars-input" type="radio" id="3star-1" name="rating3" value="1">
+                      <label class="travel-card__info-bottom-stars-label" for="3star-1" title="Оценка «1»"></label>
+                    </div>
+                  </div>
+                  <div class="travel-card__info-bottom-wrapper">
+                    <p class="travel-card__info-bottom-label travel-card__info-bottom-label-recruitment">Даты набора:</p>
+                    <span class="travel-card__info-dates">12.07–19.07</span>
+                  </div>
+                  <div class="travel-card__info-bottom-wrapper">
+                  <p class="travel-card__info-bottom-label travel-card__info-bottom-label-group">Группа:</p>
+                  <span class="travel-card__info-group-people">до 7 чел.</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
         <a href="#" class="tours__link-all">Показать все туры</a>
       </div>
     </section>
@@ -313,70 +327,86 @@
             за плечами которых десятки пройденных маршрутов Кавказа,
             Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         </div>
-        <div class="training__instructor-wrapper">
-          <h2 class="training__instructor-title">Наши инструкторы</h2>
-          <ul class="training__instructor-list">
-            <li class="training__instructor-item instructor-card">
+        <h2 class="training__instructor-title">Наши инструкторы</h2>
+        <div class="training__instructor-wrapper" id="swiper-instructor">
+          <ul class="training__instructor-list swiper-wrapper">
+            <li class="training__instructor-item instructor-card swiper-slide">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="./img/instructor@1x.webp, ./img/instructor@2x.webp 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/webp" srcset="./img/instructor@1x.webp, ./img/instructor@2x.webp 2x" width="183" height="200">
                 <source type="image/webp" srcset="./img/instructor@1x.webp, ./img/instructor@2x.webp 2x" width="260" height="200">
                 <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/instructor@1x.jpg, ./img/instructor@2x.jpg 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/jpg" srcset="./img/instructor@1x.jpg, ./img/instructor@2x.jpg 2x" width="183" height="200">
-                <img class="training__instructor-image" src="./img/instructor@1x.jpg" srcset="./img/instructor@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
+                <img class="instructor-card__image" src="./img/instructor@1x.jpg" srcset="./img/instructor@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
               </picture>
-              <h3>Александр Прокофьев</h3>
-              <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+              <div class="instructor-card__info-wrapper">
+                <h3>Александр<br>Прокофьев</h3>
+                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                <a href="#" class="instructor-card__info-link"><span class="visually-hidden">Вконтакте</span></a>
+              </div>
             </li>
-            <li class="training__instructor-item instructor-card">
+            <li class="training__instructor-item instructor-card swiper-slide">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="./img/instructor1@1x.webp, ./img/instructor1@2x.webp 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/webp" srcset="./img/instructor1@1x.webp, ./img/instructor1@2x.webp 2x" width="183" height="200">
                 <source type="image/webp" srcset="./img/instructor1@1x.webp, ./img/instructor1@2x.webp 2x" width="260" height="200">
                 <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/instructor1@1x.jpg, ./img/instructor1@2x.jpg 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/jpg" srcset="./img/instructor1@1x.jpg, ./img/instructor1@2x.jpg 2x" width="183" height="200">
-                <img class="training__instructor-image" src="./img/instructor1@1x.jpg" srcset="./img/instructor1@2x.jpg 2x" width="260" height="200" alt="Светлана Афиногенова">
+                <img class="instructor-card__image" src="./img/instructor1@1x.jpg" srcset="./img/instructor1@2x.jpg 2x" width="260" height="200" alt="Светлана Афиногенова">
               </picture>
-              <h3>Светлана Афиногенова</h3>
-              <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+              <div class="instructor-card__info-wrapper">
+                <h3>Светлана<br>Афиногенова</h3>
+                <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                <a href="#" class="instructor-card__info-link"><span class="visually-hidden">Вконтакте</span></a>
+              </div>
             </li>
-            <li class="training__instructor-item instructor-card">
+            <li class="training__instructor-item instructor-card swiper-slide">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="./img/instructor2@1x.webp, ./img/instructor2@2x.webp 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/webp" srcset="./img/instructor2@1x.webp, ./img/instructor2@2x.webp 2x" width="183" height="200">
                 <source type="image/webp" srcset="./img/instructor2@1x.webp, ./img/instructor2@2x.webp 2x" width="260" height="200">
                 <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/instructor2@1x.jpg, ./img/instructor2@2x.jpg 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/jpg" srcset="./img/instructor2@1x.jpg, ./img/instructor2@2x.jpg 2x" width="183" height="200">
-                <img class="training__instructor-image" src="./img/instructor2@1x.jpg" srcset="./img/instructor2@2x.jpg 2x" width="260" height="200" alt="Надежда Колесниченко">
+                <img class="instructor-card__image" src="./img/instructor2@1x.jpg" srcset="./img/instructor2@2x.jpg 2x" width="260" height="200" alt="Надежда Колесниченко">
               </picture>
-              <h3>Надежда Колесниченко</h3>
-              <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+              <div class="instructor-card__info-wrapper">
+                <h3>Надежда<br>Колесниченко</h3>
+                <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                <a href="#" class="instructor-card__info-link"><span class="visually-hidden">Вконтакте</span></a>
+              </div>
             </li>
-            <li class="training__instructor-item instructor-card">
+            <li class="training__instructor-item instructor-card swiper-slide">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="./img/instructor3@1x.webp, ./img/instructor3@2x.webp 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/webp" srcset="./img/instructor3@1x.webp, ./img/instructor3@2x.webp 2x" width="183" height="200">
                 <source type="image/webp" srcset="./img/instructor3@1x.webp, ./img/instructor3@2x.webp 2x" width="260" height="200">
                 <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/instructor3@1x.jpg, ./img/instructor3@2x.jpg 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/jpg" srcset="./img/instructor3@1x.jpg, ./img/instructor3@2x.jpg 2x" width="183" height="200">
-                <img class="training__instructor-image" src="./img/instructor3@1x.jpg" srcset="./img/instructor3@2x.jpg 2x" width="260" height="200" alt="Федор Кайгородов">
+                <img class="instructor-card__image" src="./img/instructor3@1x.jpg" srcset="./img/instructor3@2x.jpg 2x" width="260" height="200" alt="Федор Кайгородов">
               </picture>
-              <h3>Федор Кайгородов</h3>
-              <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+              <div class="instructor-card__info-wrapper">
+                <h3>Федор<br>Кайгородов</h3>
+                <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                <a href="#" class="instructor-card__info-link"><span class="visually-hidden">Вконтакте</span></a>
+              </div>
             </li>
-            <li class="training__instructor-item instructor-card">
+            <li class="training__instructor-item instructor-card swiper-slide">
               <picture>
                 <source media="(min-width: 1440px)" type="image/webp" srcset="./img/instructor4@1x.webp, ./img/instructor4@2x.webp 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/webp" srcset="./img/instructor4@1x.webp, ./img/instructor4@2x.webp 2x" width="183" height="200">
                 <source type="image/webp" srcset="./img/instructor4@1x.webp, ./img/instructor4@2x.webp 2x" width="260" height="200">
                 <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/instructor4@1x.jpg, ./img/instructor4@2x.jpg 2x" width="255" height="200">
                 <source media="(min-width: 768px)" type="image/jpg" srcset="./img/instructor4@1x.jpg, ./img/instructor4@2x.jpg 2x" width="183" height="200">
-                <img class="training__instructor-image" src="./img/instructor4@1x.jpg" srcset="./img/instructor4@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
+                <img class="instructor-card__image" src="./img/instructor4@1x.jpg" srcset="./img/instructor4@2x.jpg 2x" width="260" height="200" alt="Александр Прокофьев">
               </picture>
-              <h3>Даниэль Васнецов</h3>
-              <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+              <div class="instructor-card__info-wrapper">
+                <h3>Даниэль<br>Васнецов</h3>
+                <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                <a href="#" class="instructor-card__info-link"><span class="visually-hidden">Вконтакте</span></a>
+              </div>
             </li>
           </ul>
+        </div>
         <div class="training__process-wrapper">
           <h3>Процесс обучения</h3>
           <ul class="training__process-list">
@@ -385,7 +415,6 @@
             <li class="training_process-item">Лекции по окружающей среде, экологии и гигиене</li>
             <li class="training_process-item">Разъяснение сложности горных препятствий</li>
           </ul>
-        </div>
         </div>
       </div>
     </section>

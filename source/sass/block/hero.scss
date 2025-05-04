@@ -64,6 +64,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .hero__container {
+    position: relative;
+  }
   .hero__image-item {
     min-height: 1034px;
     padding: 342px 40px 40px;
@@ -91,9 +94,12 @@
   .hero__pagination {
     display: flex;
     column-gap: 20px;
-    position: relative;
+    position: absolute;
     z-index: 1;
     justify-content: center;
+    align-self: end;
+    height: 20px;
+    margin-bottom: 32px;
   }
 
   .hero__pagination-button {
@@ -155,6 +161,7 @@
   .hero__image-label::before {
     width: 12px;
     height: 12px;
+    background-size: 12px 12px;
     align-self: center;
   }
 
@@ -168,5 +175,13 @@
     background-image: url("/__spritemap#sprite-difficult-icon-view");
     content: "";
     display: block;
+  }
+
+  .hero__pagination {
+    margin-bottom: 84px;
+    margin-right: 95px;
+    justify-self: end;
+    right: 0;
+    width: 150px;
   }
 }

@@ -1,0 +1,186 @@
+.travel-card {
+  list-style-type: none;
+  position: relative;
+  min-height: 416px;
+  padding: 29px 20px;
+  display: flex;
+  width: 290px;
+}
+
+.travel-card__image {
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.travel-card__info {
+  margin-top: auto;
+  width: 250px;
+}
+
+.travel-card__info-top {
+  display: flex;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.travel-card__info-top-label {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-card__info-top-time-location-wrapper {
+  display: flex;
+}
+
+.travel-card__info-top-label-country {
+  color: #ffffff;
+  background-color: $secondary-color;
+  column-gap: 5px;
+  padding: 8px 13px;
+  margin-right: 5px;
+}
+
+.travel-card__info-top-label-country::before {
+  content: "";
+  display: block;
+  background-image: url("/__spritemap#sprite-info-country-icon-view");
+  width: 9px;
+  height: 12px;
+  background-size: 9px 12px;
+  margin-left: 3px;
+  margin-right: 4px;
+}
+
+.travel-card__info-top-label-days {
+  color: #ffffff;
+  margin-right: 17px;
+}
+
+.travel-card__info-top-label-days::before {
+  content: "";
+  display: block;
+  background-image: url("/__spritemap#sprite-info-days-icon-view");
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  margin-right: 12px;
+}
+
+.travel-card__info-top-label-nights {
+  color: #ffffff;
+}
+
+.travel-card__info-top-label-nights::before {
+  content: "";
+  display: block;
+  background-image: url("/__spritemap#sprite-info-nights-icon-view");
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  margin-right: 13px;
+}
+
+.travel-card__info-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.travel-card__info-bottom {
+  display: flex;
+  padding-top: 15px;
+  column-gap: 8px;
+}
+
+.traver-card__info-bottom-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.travel-card__info-bottom-label {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.travel-card__info-bottom-label-group,
+.travel-card__info-bottom-label-recruitment {
+  margin-bottom: 4px;
+}
+
+.travel-card__info-bottom-stars {
+  display: flex;
+  direction: rtl;
+  column-gap: 1px;
+}
+
+.travel-card__info-bottom-stars-input {
+  display: none;
+}
+
+.travel-card__info-bottom-stars-label {
+  display: block;
+  background-image: url("/__spritemap#sprite-stars-rating-icon-view");
+  width: 16px;
+  height: 14px;
+  background-size: 16px 14px;
+}
+
+.travel-card__info-bottom-stars-input[type="radio"]:checked ~ .travel-card__info-bottom-stars-label {
+  background-image: url("/__spritemap#sprite-stars-rating-click-icon-view");
+}
+
+.travel-card__info-dates {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.travel-card__info-group-people {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .travel-card__info {
+    width: 290px;
+  }
+
+  .travel-card__info-top {
+    justify-content: space-between;
+  }
+
+  .travel-card__info-bottom {
+    column-gap: unset;
+    justify-content: space-between;
+  }
+
+  .travel-card__info-title {
+    width: 240px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travel-card__info {
+    width: 340px;
+  }
+
+}

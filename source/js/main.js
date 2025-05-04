@@ -4,3 +4,5 @@
 // import 'swiper/css';
 
 import './swiper-hero.js';
+import './swiper-tours.js';
+import './swiper-instructor.js';
