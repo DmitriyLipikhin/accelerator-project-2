@@ -1,0 +1,105 @@
+.reviews__container {
+    width: 320px;
+    padding: 18px 15px;
+    margin: 0 auto;
+}
+
+.reviews__title {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.reviews__wrapper {
+    padding: 20px 19px 20px  20px;
+    overflow: hidden;
+}
+
+.reviews__button-wrapper {
+    display: none;
+}
+
+.reviews__list {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .reviews__container {
+        width: 768px;
+        padding: 34px 0 34px 45px;
+        position: relative;
+    }
+
+    .reviews__title {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 35px;
+    }
+
+    .reviews__wrapper {
+        padding: 0;
+    }
+
+    .reviews__button-wrapper {
+        display: flex;
+        column-gap: 8px;
+        column-gap: 4px;
+        position: absolute;
+        right: 45px;
+        top: 34px;
+    }
+    
+    .reviews__button {
+        display: block;
+        width: 37px;
+        height: 35px;
+        border: none;
+        background-color: $secondary-color;
+        padding: 13px 11px;
+    }
+    
+    .reviews__button-left {
+        background-color: #999999;
+    }
+    
+    .reviews__button::after {
+        content: "";
+        display: block;
+        background-color: #ffffff;
+        mask-image: url("/__spritemap#sprite-tours-slider-arrow-view");
+        width: 15px;
+        height: 9px;
+        mask-size: 16px 9px;
+    }
+    
+    .reviews__button-left::after {
+        transform: rotate(180deg);
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .reviews__container {
+        width: 1440px;
+        padding: 197px 0 100px 120px;
+        position: relative;
+    }
+
+    .reviews__title {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 38px;
+    }
+
+    .reviews__button-wrapper {
+        right: 120px;
+        top: 197px;
+    }
+
+    .reviews__list {
+        padding-left: 10px;
+    }
+}
+

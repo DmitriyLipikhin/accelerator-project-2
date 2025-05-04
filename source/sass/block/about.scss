@@ -1,0 +1,127 @@
+.about__container {
+    min-width: 320px;
+    padding-top: 396px;
+    background-image: image-set(
+    url("../../img/about-mobile@1x.webp") type("image/webp") 1x,
+    url("../../img/about-mobile@2x.webp") type("image/webp") 2x,
+    url("../../img/about-mobile@1x.png") type("image/png") 1x,
+    url("../../img/about-mobile@2x.wpng") type("image/png") 2x
+    );
+    background-repeat: no-repeat;
+    background-size: 320px 400px;
+    margin: 0 auto;
+    background-size: contain;
+    background-position: 0 -6px;
+}
+
+.about__wrapper {
+    padding: 15px;
+}
+
+.about__wrapper h2 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 41px;
+}
+
+.about__wrapper h3 {
+    font-size: 16px;
+   line-height: 16px;
+   font-weight: 700;
+   margin: 0;
+   margin-bottom: 13px;
+}
+
+.about__wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+    .about__container {
+        padding: 52px 48px 40px 0;
+        background-image: image-set(
+        url("../../img/about-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/about-tablet@2x.webp") type("image/webp") 2x,
+        url("../../img/about-tablet@1x.png") type("image/png") 1x,
+        url("../../img/about-tablet@2x.wpng") type("image/png") 2x
+        );
+        background-size: 542px 350px;
+        background-position: left 166px;
+    }
+
+    .about__wrapper {
+        width: 270px;
+        margin-left: auto;
+        padding: 0;
+    }
+
+    .about__wrapper h2 {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 47px;
+    }
+    
+    .about__wrapper h3 {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 13px;
+    }
+    
+    .about__wrapper p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        margin-bottom: 27px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .about__container {
+        padding: 160px 195px 100px 0;
+        background-image: image-set(
+        url("../../img/about-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/about-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/about-desktop@1x.png") type("image/png") 1x,
+        url("../../img/about-desktop@2x.wpng") type("image/png") 2x
+        );
+        background-size: 660px 498px;
+        background-position: left 115px;
+    }
+
+    .about__wrapper {
+        width: 585px;
+        margin-left: auto;
+    }
+
+    .about__wrapper h2 {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 58px;
+    }
+    
+    .about__wrapper h3 {
+        font-size: 21px;
+        line-height: 21px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 17px;
+    }
+    
+    .about__wrapper p {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0;
+        margin-bottom: 28px;
+    }
+
+    .about__wrapper p:nth-child(3) {
+        width: 572px;
+    }
+}

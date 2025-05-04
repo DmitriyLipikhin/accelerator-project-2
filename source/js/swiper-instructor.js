@@ -2,11 +2,10 @@ import Swiper from "swiper";
 import { Navigation, Mousewheel } from "swiper/modules";
 
 new Swiper ('#swiper-instructor', {
-  modules: Navigation, Mousewheel,
+  modules: [Navigation, Mousewheel],
   direction: 'horizontal',
   loop: true,
   allowTouchMove: false,
-
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -22,6 +21,11 @@ new Swiper ('#swiper-instructor', {
     },
     1440: {
       slidesPerView: 4,
+      spaceBetween: 20
     }
+  },
+  navigation: {
+    nextEl: '.training__button-right',
+    prevEl: '.training__button-left'
   }
 })

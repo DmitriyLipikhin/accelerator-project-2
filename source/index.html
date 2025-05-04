@@ -324,11 +324,15 @@
         <div class="training__wrapper">
           <h2 class="training__title">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами,
-            за плечами которых десятки пройденных маршрутов Кавказа,
-            Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+            за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, 
+            Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         </div>
         <h2 class="training__instructor-title">Наши инструкторы</h2>
         <div class="training__instructor-wrapper" id="swiper-instructor">
+          <div class="training__button-wrapper">
+            <button class="training__button training__button-left"><span class="visually-hidden">Листать влево</span></button>
+            <button class="training__button training__button-right"><span class="visually-hidden">Листать вправо</span></button>
+          </div>
           <ul class="training__instructor-list swiper-wrapper">
             <li class="training__instructor-item instructor-card swiper-slide">
               <picture>
@@ -341,7 +345,7 @@
               </picture>
               <div class="instructor-card__info-wrapper">
                 <h3>Александр<br>Прокофьев</h3>
-                <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                <p>Строгий и внимательный инструктор, весёлый<br> и общительный человек. Любит природу.</p>
                 <a href="#" class="instructor-card__info-link"><span class="visually-hidden">Вконтакте</span></a>
               </div>
             </li>
@@ -407,13 +411,21 @@
             </li>
           </ul>
         </div>
-        <div class="training__process-wrapper">
-          <h3>Процесс обучения</h3>
-          <ul class="training__process-list">
-            <li class="training_process-item">Изучение спортивного туристского движения</li>
-            <li class="training_process-item">Подготовка и техническое снаряжение в походах</li>
-            <li class="training_process-item">Лекции по окружающей среде, экологии и гигиене</li>
-            <li class="training_process-item">Разъяснение сложности горных препятствий</li>
+        <div class="training__proccess-wrapper">
+          <h3 class="training__proccess-title">Процесс обучения</h3>
+          <ul class="training__proccess-list">
+            <li class="training__proccess-item training__proccess-item-map">
+              <p class="training__proccess-text training__proccess-text-map">Изучение спортивного туристского движения</p>
+            </li>
+            <li class="training__proccess-item training__proccess-item-wear">
+              <p class="training__proccess-text training__proccess-text-wear">Подготовка и техническое снаряжение в походах</p>
+            </li>
+            <li class="training__proccess-item training__proccess-item-wood">
+              <p class="training__proccess-text training__proccess-text-wood">Лекции по окружающей среде, экологии и гигиене</p>
+            </li>
+            <li class="training__proccess-item training__proccess-item-mountain">
+              <p class="training__proccess-text training__proccess-text-mountain">Разъяснение сложности горных препятствий</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -435,106 +447,128 @@
     </section>
     <section class="reviews" data-test="reviews">
       <div class="reviews__container container">
-        <h2 class="reviews__title"></h2>
-        <ul class="reviews__list">
-          <li class="reviews__item card-review">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/review-dekstop@1x.webp, ./img/review-desktop@2x.webp 2x" width="258" height="253">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet@1x.webp, ./img/review-tablet@2x.webp 2x" width="186" height="237">
-              <source type="image/webp" srcset="./img/review-mobile@1x.webp, ./img/review-mobile@2x.webp 2x" width="250" height="169">
-              <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/review-desktop@1x.jpg, ./img/review-desktop@2x.jpg 2x" width="258" height="253">
-              <source media="(min-width: 768px)" type="image/jpg" srcset="./img/review-tablet@1x.jpg, ./img/review-tablet@2x.jpg 2x" width="186" height="237">
-              <img class="training__instructor-image" src="./img/review-mobile@1x.jpg" srcset="./img/review-mobile@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
-            </picture>
-            <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие!
-              Инструкторы, настоящие эксперты, всему научили, все показали.
-              Делились историями о местах, людях, культуре места.</p>
-            <p>С уверенностью могу сказать, что жизнь разделилась на до этого
-              и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
-            <h3 class="card-review__full-name">Фролов Александр</h3>
-            <p class="card-review__age-country">38 лет, Москва</p>
-          </li>
-          <li class="reviews__item card-review">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/review-dekstop1@1x.webp, ./img/review-desktop1@2x.webp 2x" width="258" height="253">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet1@1x.webp, ./img/review-tablet1@2x.webp 2x" width="186" height="237">
-              <source type="image/webp" srcset="./img/review-mobile1@1x.webp, ./img/review-mobile1@2x.webp 2x" width="250" height="169">
-              <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/review-desktop1@1x.jpg, ./img/review-desktop1@2x.jpg 2x" width="258" height="253">
-              <source media="(min-width: 768px)" type="image/jpg" srcset="./img/review-tablet1@1x.jpg, ./img/review-tablet1@2x.jpg 2x" width="186" height="237">
-              <img class="training__instructor-image" src="./img/review-mobile1@1x.jpg" srcset="./img/review-mobile1@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
-            </picture>
-            <p>Хороший полноценный поход с разнообразными локациями.
-              В начале дорога идёт по лыжне, далее прошли мимо полигона,
-              по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
-              Было очень интересно!</p>
-            <p>Инструктор Федор дружелюбный, внимательный к технике
-              безопасности и своим туристам. Всем советую этот тур.</p>
-            <h3 class="card-review__full-name">Фролов Александр</h3>
-            <p class="card-review__age-country">38 лет, Москва</p>
-          </li>
-          <li class="reviews__item card-review">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/review-dekstop2@1x.webp, ./img/review-desktop2@2x.webp 2x" width="258" height="253">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet2@1x.webp, ./img/review-tablet2@2x.webp 2x" width="186" height="237">
-              <source type="image/webp" srcset="./img/review-mobile2@1x.webp, ./img/review-mobile2@2x.webp 2x" width="250" height="169">
-              <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/review-desktop2@1x.jpg, ./img/review-desktop2@2x.jpg 2x" width="258" height="253">
-              <source media="(min-width: 768px)" type="image/jpg" srcset="./img/review-tablet2@1x.jpg, ./img/review-tablet2@2x.jpg 2x" width="186" height="237">
-              <img class="training__instructor-image" src="./img/review-mobile2@1x.jpg" srcset="./img/review-mobile2@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
-            </picture>
-            <p>Ранее не ходила на такие длинные дистанции. В первый день прошли
-              около 30 км, физически я устала на 18 км, поэтому не была уверена,
-              пройду ли до конца. Но я справилась. Второй день прошёл легче,
-              чем ожидала, видимо организм уже привык.</p>
-            <p>Спасибо ребятам, инструкторам за помощь и поддержку!
-              Я была рада быть в такой компании</p>
-            <h3 class="card-review__full-name">Евгения Баженова</h3>
-            <p class="card-review__age-country">23 года, Кострома</p>
-          </li>
-          <li class="reviews__item card-review">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="./img/review-dekstop3@1x.webp, ./img/review-desktop3@2x.webp 2x" width="258" height="253">
-              <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet3@1x.webp, ./img/review-tablet3@2x.webp 2x" width="186" height="237">
-              <source type="image/webp" srcset="./img/review-mobile3@1x.webp, ./img/review-mobile3@2x.webp 2x" width="250" height="169">
-              <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/review-desktop3@1x.jpg, ./img/review-desktop3@2x.jpg 2x" width="258" height="253">
-              <source media="(min-width: 768px)" type="image/jpg" srcset="./img/review-tablet3@1x.jpg, ./img/review-tablet3@2x.jpg 2x" width="186" height="237">
-              <img class="training__instructor-image" src="./img/review-mobile3@1x.jpg" srcset="./img/review-mobile3@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
-            </picture>
-            <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось!
-              Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину. </p>
-            <p>У нас собралась потрясающая команда. Все друг друга поддерживали,
-              по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
-            <h3 class="card-review__full-name">Елена Пирогова</h3>
-            <p class="card-review__age-country">37 лет, Тюмень</p>
-          </li>
-        </ul>
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__wrapper" id="swiper-review">
+          <div class="reviews__button-wrapper">
+            <button class="reviews__button reviews__button-left"><span class="visually-hidden">Листать влево</span></button>
+            <button class="reviews__button reviews__button-right"><span class="visually-hidden">Листать вправо</span></button>
+          </div>
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item card-review swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/review-dekstop@1x.webp, ./img/review-desktop@2x.webp 2x" width="258" height="253">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet@1x.webp, ./img/review-tablet@2x.webp 2x" width="186" height="237">
+                <source type="image/webp" srcset="./img/review-mobile@1x.webp, ./img/review-mobile@2x.webp 2x" width="250" height="169">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/review-desktop@1x.jpg, ./img/review-desktop@2x.jpg 2x" width="258" height="253">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/review-tablet@1x.jpg, ./img/review-tablet@2x.jpg 2x" width="186" height="237">
+                <img class="card-review__image" src="./img/review-mobile@1x.jpg" srcset="./img/review-mobile@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
+              </picture>
+              <div class="card-review__info-wrapper">
+                <div class="card-review__text-wrapper">
+                  <p>Осенью ходили в поход на Алтай<br> с друзьями. Впечатления потрясающие!
+                    Инструкторы, настоящие эксперты, всему научили,<br> все показали.
+                    Делились историями о местах, людях, культуре места.</p>
+                  <p>С уверенностью могу сказать,<br> что жизнь разделилась на до этого
+                    и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
+                </div>
+                <h3 class="card-review__full-name">Фролов Александр</h3>
+                <p class="card-review__age-country">38 лет, Москва</p>
+              </div>
+            </li>
+            <li class="reviews__item card-review swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/review-dekstop1@1x.webp, ./img/review-desktop1@2x.webp 2x" width="258" height="253">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet1@1x.webp, ./img/review-tablet1@2x.webp 2x" width="186" height="237">
+                <source type="image/webp" srcset="./img/review-mobile1@1x.webp, ./img/review-mobile1@2x.webp 2x" width="250" height="169">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/review-desktop1@1x.jpg, ./img/review-desktop1@2x.jpg 2x" width="258" height="253">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/review-tablet1@1x.jpg, ./img/review-tablet1@2x.jpg 2x" width="186" height="237">
+                <img class="card-review__image" src="./img/review-mobile1@1x.jpg" srcset="./img/review-mobile1@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
+              </picture>
+              <div class="card-review__info-wrapper">
+                <div class="card-review__text-wrapper">
+                  <p>Хороший полноценный поход с разнообразными локациями.
+                    В начале дорога идёт по лыжне, далее прошли мимо полигона,
+                    по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
+                    Было очень интересно!</p>
+                  <p>Инструктор Федор дружелюбный, внимательный к технике
+                    безопасности и своим туристам. Всем советую этот тур.</p>
+                </div>
+                <h3 class="card-review__full-name">Иван Соловьёв</h3>
+                <p class="card-review__age-country">38 лет, Москва</p>
+              </div>
+            </li>
+            <li class="reviews__item card-review swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/review-dekstop2@1x.webp, ./img/review-desktop2@2x.webp 2x" width="258" height="253">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet2@1x.webp, ./img/review-tablet2@2x.webp 2x" width="186" height="237">
+                <source type="image/webp" srcset="./img/review-mobile2@1x.webp, ./img/review-mobile2@2x.webp 2x" width="250" height="169">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/review-desktop2@1x.jpg, ./img/review-desktop2@2x.jpg 2x" width="258" height="253">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/review-tablet2@1x.jpg, ./img/review-tablet2@2x.jpg 2x" width="186" height="237">
+                <img class="card-review__image" src="./img/review-mobile2@1x.jpg" srcset="./img/review-mobile2@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
+              </picture>
+              <div class="card-review__info-wrapper">
+                <div class="card-review__text-wrapper">
+                  <p>Ранее не ходила на такие длинные дистанции. В первый день прошли
+                    около 30 км, физически я устала на 18 км, поэтому не была уверена,
+                    пройду ли до конца. Но я справилась. Второй день прошёл легче,
+                    чем ожидала, видимо организм уже привык.</p>
+                  <p>Спасибо ребятам, инструкторам за помощь и поддержку!
+                    Я была рада быть в такой компании</p>
+                </div>
+                <h3 class="card-review__full-name">Евгения Баженова</h3>
+                <p class="card-review__age-country">23 года, Кострома</p>
+              </div>
+            </li>
+            <li class="reviews__item card-review swiper-slide">
+              <picture>
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/review-dekstop3@1x.webp, ./img/review-desktop3@2x.webp 2x" width="258" height="253">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/review-tablet3@1x.webp, ./img/review-tablet3@2x.webp 2x" width="186" height="237">
+                <source type="image/webp" srcset="./img/review-mobile3@1x.webp, ./img/review-mobile3@2x.webp 2x" width="250" height="169">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/review-desktop3@1x.jpg, ./img/review-desktop3@2x.jpg 2x" width="258" height="253">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/review-tablet3@1x.jpg, ./img/review-tablet3@2x.jpg 2x" width="186" height="237">
+                <img class="card-review__image" src="./img/review-mobile3@1x.jpg" srcset="./img/review-mobile3@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
+              </picture>
+              <div class="card-review__info-wrapper">
+                <div class="card-review__text-wrapper">
+                  <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось!
+                    Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на  вершину. </p>
+                  <p>У нас собралась потрясающая команда. Все друг друга поддерживали,
+                  по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
+                </div>
+                <h3 class="card-review__full-name">Елена Пирогова</h3>
+                <p class="card-review__age-country">37 лет, Тюмень</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="advantages" data-test="adv">
       <div class="advantages__container container">
-        <h2 class="advantages__title"></h2>
+        <h2 class="advantages__title">Преимущества</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-defend">
             <h3>Безопасность</h3>
             <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности.
               Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-knowledge">
             <h3>Экспертиза и знания</h3>
             <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
               Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-wear">
             <h3>Оборудование и снаряжение</h3>
             <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия.
                Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-route">
             <h3>Индивидуальные маршруты</h3>
             <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам.
               Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
           </li>
-          <li class="advantages__item">
-            <h3>Бережное отношение к природе</h3>
+          <li class="advantages__item advantages__item-nature">
+            <h3>Бережное отношение<br> к природе</h3>
             <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду.
               Наша компания следует принципу «Не оставлять следов».</p>
           </li>

@@ -6,3 +6,4 @@
 import './swiper-hero.js';
 import './swiper-tours.js';
 import './swiper-instructor.js';
+import './swiper-review.js';

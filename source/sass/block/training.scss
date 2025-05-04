@@ -47,9 +47,315 @@
 
 .training__instructor-wrapper {
   overflow: hidden;
+  margin-bottom: 25px;  
+}
+
+.training__button-wrapper {
+  display: none;
+}
+
+.training__proccess-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 }
 
 .training__instructor-list {
   margin: 0;
   padding: 0;
+}
+
+.training__proccess-title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.training__proccess-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  position: relative;
+}
+
+.training__proccess-list::before {
+  content: "";
+  display: block;
+  border-left: 2px solid $secondary-color;
+  height: 183px;
+  position: absolute;
+  top: 20px;
+  left: 6px;
+}
+
+.training__proccess-item {
+  list-style-type: none;
+}
+
+.training__proccess-text {
+  font-size: 12px;
+  display: flex;
+  margin: 0;
+  width: 290px;
+  padding-left: 63px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.training__proccess-text::before  {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 29px;
+}
+
+.training__proccess-text-map::before {
+  background-image: url(/__spritemap#sprite-training-map-icon-view);
+}
+
+.training__proccess-text-wear::before  {
+  background-image: url(/__spritemap#sprite-training-wear-icon-view);
+  width: 25px;
+  height: 25px;
+  background-size: 25px 22px;
+  top: 2px;
+}
+
+.training__proccess-text-wood::before {
+  background-image: url(/__spritemap#sprite-training-wood-icon-view);
+}
+
+.training__proccess-text-mountain::before  {
+  background-image: url(/__spritemap#sprite-training-mountain-icon-view);
+}
+
+.training__proccess-text::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: $secondary-color;
+  border-radius: 50%;
+  order: -1;
+  align-self: center;
+  margin-right: 5px;
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .training__container {
+    width: 768px;
+    padding: 50px 45px;
+    position: relative;
+  }
+
+  .training__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .training__title::before {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .training__wrapper {
+    row-gap: 18px;
+    white-space: pre-line;
+  }
+
+  .training__wrapper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .training__instructor-title {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 37px;
+  }
+  
+  .training__instructor-wrapper {
+    margin-bottom: 27px;
+  }
+
+  .training__button-wrapper {
+    display: flex;
+    column-gap: 8px;
+    column-gap: 4px;
+    position: absolute;
+    right: 45px;
+    top: 208px;
+  }
+
+  .training__button {
+    display: block;
+    width: 37px;
+    height: 35px;
+    border: none;
+    background-color: $secondary-color;
+    padding: 13px 11px;
+  }
+
+  .training__button-left {
+    background-color: #999999;
+  }
+
+  .training__button::after {
+    content: "";
+    display: block;
+    background-color: #ffffff;
+    mask-image: url("/__spritemap#sprite-tours-slider-arrow-view");
+    width: 15px;
+    height: 9px;
+    mask-size: 16px 9px;
+  }
+
+  .training__button-left::after {
+    transform: rotate(180deg);
+  }
+
+  .training__proccess-wrapper {
+    row-gap: 100px;
+  }
+
+  .training__proccess-title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .training__proccess-list {
+    flex-flow: row wrap;
+    row-gap: 104px;
+    column-gap: 174px;
+  }
+
+  .training__proccess-list::before {
+    display: none;
+  }
+
+  .training__proccess-item-map {
+    order: 0;
+  }
+  
+  .training__proccess-item-wear {
+    order: 2;
+  }
+
+  .training__proccess-item-wood {
+    order: 3;
+  }
+
+  .training__proccess-item-mountain {
+    order: 1;
+  }
+
+  .training__proccess-text {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 35px;
+    width: 232px;
+    padding-right: 0
+  }
+
+  .training__proccess-text::after {
+    display: none;
+  }
+
+  .training__proccess-text::before {
+    left: 0;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .training__container {
+    width: 1440px;
+    padding: 49px 120px;
+  }
+
+  .training__wrapper {
+    white-space: unset;
+    row-gap: 16px;
+    margin-bottom: 46px;
+  }
+
+  .training__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .training__title::before {
+    font-size: 55px;
+    line-height: 55px;
+  }
+
+  .training__wrapper p {
+    width: 820px;
+  }
+
+  .training__instructor-title {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 16px;
+  }
+
+  .training__instructor-wrapper {
+    margin-bottom: 58px;
+  }
+
+  .training__button-wrapper {
+    right: 120px;
+    top: 222px;
+  }
+
+  .training__proccess-wrapper {
+    row-gap: 27px;
+  }
+
+  .training__proccess-title {
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .training__proccess-list {
+    column-gap: 21px;
+    padding-left: 10px;
+  }
+
+  .training__proccess-list::before {
+    display: block;
+    border-left: none;
+    border-bottom: 2px solid $secondary-color;
+    width: 1180px;
+    top: -101px;
+    left: 20px;
+  }
+
+  .training__proccess-item {
+    order: unset;
+  }
+
+  .training__proccess-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .training__proccess-text::after {
+    display: block;
+    left: 10px;
+    top: 73px;
+  }
+
+  .training__proccess-text-wood::after {
+    left: -9px;
+  }
 }
