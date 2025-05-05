@@ -324,7 +324,7 @@
         <div class="training__wrapper">
           <h2 class="training__title">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами,
-            за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, 
+            за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев,
             Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         </div>
         <h2 class="training__instructor-title">Наши инструкторы</h2>
@@ -466,7 +466,7 @@
               <div class="card-review__info-wrapper">
                 <div class="card-review__text-wrapper">
                   <p>Осенью ходили в поход на Алтай<br> с друзьями. Впечатления потрясающие!
-                    Инструкторы, настоящие эксперты, всему научили,<br> все показали.
+                    Инструкторы, настоящие эксперты, всему научили,<br> все&nbsp;показали.
                     Делились историями о местах, людях, культуре места.</p>
                   <p>С уверенностью могу сказать,<br> что жизнь разделилась на до этого
                     и после. Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
@@ -546,78 +546,98 @@
     <section class="advantages" data-test="adv">
       <div class="advantages__container container">
         <h2 class="advantages__title">Преимущества</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item-defend">
-            <h3>Безопасность</h3>
-            <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности.
-              Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
-          </li>
-          <li class="advantages__item advantages__item-knowledge">
-            <h3>Экспертиза и знания</h3>
-            <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.
-              Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
-          </li>
-          <li class="advantages__item advantages__item-wear">
-            <h3>Оборудование и снаряжение</h3>
-            <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия.
-               Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
-          </li>
-          <li class="advantages__item advantages__item-route">
-            <h3>Индивидуальные маршруты</h3>
-            <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам.
-              Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
-          </li>
-          <li class="advantages__item advantages__item-nature">
-            <h3>Бережное отношение<br> к природе</h3>
-            <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду.
-              Наша компания следует принципу «Не оставлять следов».</p>
-          </li>
-        </ul>
+        <div class="advantages__wrapper" id="swiper-advantages">
+          <div class="advantages__button-wrapper">
+            <button class="advantages__button advantages__button-left"><span class="visually-hidden">Листать влево</span></button>
+            <button class="advantages__button advantages__button-right"><span class="visually-hidden">Листать вправо</span></button>
+          </div>
+          <ul class="advantages__list swiper-wrapper">
+            <li class="advantages__item advantages__item-defend swiper-slide">
+              <h3>Безопасность</h3>
+              <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности.
+                Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+            </li>
+            <li class="advantages__item advantages__item-knowledge swiper-slide">
+              <h3>Экспертиза и знания</h3>
+              <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.<br>
+                Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+            </li>
+            <li class="advantages__item advantages__item-wear swiper-slide">
+              <h3>Оборудование и снаряжение</h3>
+              <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия.
+                Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+            </li>
+            <li class="advantages__item advantages__item-route swiper-slide">
+              <h3>Индивидуальные маршруты</h3>
+              <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам.
+                Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+            </li>
+            <li class="advantages__item advantages__item-nature swiper-slide">
+              <h3>Бережное отношение к природе</h3>
+              <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду.
+                Наша компания следует принципу «Не оставлять следов».</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="gallery" data-test="gallery">
       <div class="gallery__container container">
-        <h2 class="gallery__title">Фотогалерея</h2>
-        <div class="gallery__text">
-          <p>Добавляйте фото с хэштегом #лайфтур, а также отмечайте нас на фото.
-            Лучшие фотографии украсят этот раздел нашего сайта.</p>
-          <ul class="gallery__list">
-            <li class="gallery__item">
+        <div class="gallery__text-wrapper">
+          <h2 class="gallery__title">Фотогалерея</h2>
+          <p>Добавляйте фото с хэштегом #лайфтур,<br> а также отмечайте нас на фото.
+              Лучшие фотографии украсят этот раздел нашего сайта.</p>
+        </div>
+        <div class="gallery__wrapper" id="swiper-gallery">
+          <div class="gallery__button-wrapper">
+            <button class="gallery__button gallery__button-left"><span class="visually-hidden">Листать влево</span></button>
+            <button class="gallery__button gallery__button-right"><span class="visually-hidden">Листать вправо</span></button>
+          </div>
+          <ul class="gallery__list swiper-wrapper">
+            <li class="gallery__item swiper-slide">
               <picture>
                 <source type="image/webp" srcset="./img/gallery@1x.webp, ./img/gallery@2x.webp 2x" width="158" height="266">
-                <img class="training__instructor-image" src="./img/gallery@1x.jpg" srcset="./img/gallery@2x.jpg 2x" width="158" height="266" alt="Фролов Александр">
+                <img class="gallery__image" src="./img/gallery@1x.jpg" srcset="./img/gallery@2x.jpg 2x" width="158" height="266" alt="Фролов Александр">
               </picture>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item-double swiper-slide">
               <picture>
-                <source type="image/webp" srcset="./img/gallery1@1x.webp, ./img/gallery1@2x.webp 2x" width="158" height="266">
-                <img class="training__instructor-image" src="./img/gallery1@1x.jpg" srcset="./img/gallery1@2x.jpg 2x" width="157" height="149" alt="Фролов Александр">
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/gallery1@1x.webp, ./img/gallery1@2x.webp 2x" width="284" height="233">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/gallery-tablet1@1x.webp, ./img/gallery-tablet1@2x.webp 2x" width="252" height="237">
+                <source type="image/webp" srcset="./img/gallery-mobile1@1x.webp, ./img/gallery-mobile1@2x.webp 2x" width="158" height="266">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/gallery1@1x.jpg, ./img/gallery1@2x.jpg 2x" width="284" height="233">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/gallery-tablet1@1x.jpg, ./img/gallery-tablet1@2x.jpg 2x" width="252" height="237">
+                <img class="gallery__image" src="./img/gallery-mobile1@1x.jpg" srcset="./img/gallery-mobile1@2x.jpg 2x" width="157" height="149" alt="Фролов Александр">
               </picture>
               <picture>
-                <source type="image/webp" srcset="./img/gallery2@1x.webp, ./img/gallery2@2x.webp 2x" width="157" height="149">
-                <img class="training__instructor-image" src="./img/gallery2@1x.jpg" srcset="./img/gallery2@2x.jpg 2x" width="157" height="149" alt="Фролов Александр">
+                <source media="(min-width: 1440px)" type="image/webp" srcset="./img/gallery2@1x.webp, ./img/gallery2@2x.webp 2x" width="284" height="233">
+                <source media="(min-width: 768px)" type="image/webp" srcset="./img/gallery-tablet2@1x.webp, ./img/gallery-tablet2@2x.webp 2x" width="252" height="237">
+                <source type="image/webp" srcset="./img/gallery-mobile2@1x.webp, ./img/gallery-mobile2@2x.webp 2x" width="157" height="149">
+                <source media="(min-width: 1440px)" type="image/jpg" srcset="./img/gallery2@1x.jpg, ./img/gallery2@2x.jpg 2x" width="284" height="233">
+                <source media="(min-width: 768px)" type="image/jpg" srcset="./img/gallery-tablet2@1x.jpg, ./img/gallery-tablet2@2x.jpg 2x" width="252" height="237">
+                <img class="gallery__image" src="./img/gallery-mobile2@1x.jpg" srcset="./img/gallery-mobile2@2x.jpg 2x" width="157" height="149" alt="Фролов Александр">
               </picture>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item swiper-slide">
               <picture>
                 <source type="image/webp" srcset="./img/gallery3@1x.webp, ./img/gallery3@2x.webp 2x" width="158" height="266">
-                <img class="training__instructor-image" src="./img/gallery3@1x.jpg" srcset="./img/gallery3@2x.jpg 2x" width="158" height="266" alt="Фролов Александр">
+                <img class="gallery__image" src="./img/gallery3@1x.jpg" srcset="./img/gallery3@2x.jpg 2x" width="158" height="266" alt="Фролов Александр">
               </picture>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item gallery__item-double swiper-slide">
               <picture>
                 <source type="image/webp" srcset="./img/gallery4@1x.webp, ./img/gallery4@2x.webp 2x" width="158" height="266">
-                <img class="training__instructor-image" src="./img/gallery4@1x.jpg" srcset="./img/gallery4@2x.jpg 2x" width="157" height="149" alt="Фролов Александр">
+                <img class="gallery__image" src="./img/gallery4@1x.jpg" srcset="./img/gallery4@2x.jpg 2x" width="157" height="149" alt="Фролов Александр">
               </picture>
               <picture>
                 <source type="image/webp" srcset="./img/gallery5@1x.webp, ./img/gallery5@2x.webp 2x" width="157" height="149">
-                <img class="training__instructor-image" src="./img/gallery5@1x.jpg" srcset="./img/gallery5@2x.jpg 2x" width="157" height="149" alt="Фролов Александр">
+                <img class="gallery__image" src="./img/gallery5@1x.jpg" srcset="./img/gallery5@2x.jpg 2x" width="157" height="149" alt="Фролов Александр">
               </picture>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item swiper-slide">
               <picture>
                 <source type="image/webp" srcset="./img/gallery6@1x.webp, ./img/gallery6@2x.webp 2x" width="158" height="266">
-                <img class="gallery-image" src="./img/gallery6@1x.jpg" srcset="./img/gallery6@2x.jpg 2x" width="158" height="266" alt="Фролов Александр">
+                <img class="gallery__image" src="./img/gallery6@1x.jpg" srcset="./img/gallery6@2x.jpg 2x" width="158" height="266" alt="Фролов Александр">
               </picture>
             </li>
           </ul>
@@ -628,13 +648,13 @@
       <div class="form__container container">
         <div class="form__text">
           <h2>Остались вопросы?</h2>
-          <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+          <p>Заполните форму и наш оператор свяжется с вами&nbsp;для консультации.</p>
         </div>
         <div class="form__input-wrapper">
-          <label for="telephone">Телефон</label>
-          <input class="form__input" id="telephone" type="tel" name="Телефон" placeholder="Как к вам обращаться?" required>
-          <label for="email">Email</label>
-          <input class="form__input" id="email" type="text" name="Email" placeholder="Телефон" required>
+          <label class="visually-hidden" for="telephone">Телефон</label>
+          <input class="form__input" id="telephone" type="tel" name="Телефон" placeholder="Телефон" required>
+          <label class="visually-hidden" for="email">Email</label>
+          <input class="form__input" id="email" type="text" name="Email" placeholder="Email" required>
           <button class="form__button button" type="submit">Отправить</button>
          </div>
       </div>
@@ -642,25 +662,26 @@
     <footer class="footer" data-test="footer">
       <div class="footer__container container">
         <div class="footer__contacts">
-          <h2 class="footer__contacts-title">Контакты</h2>
-          <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости.
+          <div class="footer__contacts-text">
+            <h2 class="footer__contacts-title">Контакты</h2>
+            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости.
             Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+          </div>
           <ul class="footer__contacts-list">
             <li class="footer__contacts-item footer__contacts-item--tel">
               <p class="footer__contacts-label">Телефон</p>
-              <a href="tel:89837454545" class="footer__contacts-link">+7 983 745-45-45</a>
+              <a class="footer__contacts-link" href="tel:89837454545">+7 983 745-45-45</a>
             </li>
-            <li class="footer__contacts-item footer__contacts-item--tel">
+            <li class="footer__contacts-item footer__contacts-item--email">
               <p class="footer__contacts-label">Email</p>
-              <a href="mailto:info@lifetour.com" class="footer__contacts-link">info@lifetour.com</a>
+              <a class="footer__contacts-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
             </li>
-            <li class="footer__contacts-item footer__contacts-item--tel">
+            <li class="footer__contacts-item footer__contacts-item--address">
               <p class="footer__contacts-label">Адрес</p>
-              <p class="footer__contacts-text">г. Москва, пр-т Мира, д. 14, офис 101</p>
+              <p class="footer__contacts-address">г. Москва, пр-т Мира, д. 14, офис 101</p>
             </li>
           </ul>
-        </div>
-        <div class="footer__map">
+          <div class="footer__map">
           <picture>
             <source media="(min-width: 1440px)" type="image/webp" srcset="./img/map-desktop@1x.webp, ./img/map-desktop@2x.webp 2x" width="600" height="324">
             <source media="(min-width: 768px)" type="image/webp" srcset="./img/map-tablet@1x.webp, ./img/map-tablet@2x.webp 2x" width="768" height="340">
@@ -669,6 +690,7 @@
             <source media="(min-width: 768px)" type="image/jpg" srcset="./img/map-tablet@1x.png, ./img/map-tablet@2x.png 2x" width="768" height="340">
             <img class="training__instructor-image" src="./img/map-mobile@1x.png" srcset="./img/map-mobile@2x.png 2x" width="320" height="343" alt="Фото карты с местонахождением офиса">
           </picture>
+          </div>
         </div>
         <div class="footer__navigation">
           <svg class="footer__navigation-logo">
